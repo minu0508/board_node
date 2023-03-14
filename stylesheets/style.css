@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.c {
+  text-align: center;
+  word-spacing: 100px;
+  background-color:grey;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+}
