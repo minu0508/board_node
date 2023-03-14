@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <!-- 네비게이션 바 (메뉴) -->
+    <form action="/list", method="post">
+        <p class="c"><%-include ('nav/header.ejs') %></p>
+            <h1>
+                <%= title %>
+            </h1>
+            <hr>
+            
+            <table border="1" style="text-align: center; margin-left: auto; margin-right: auto;">
+                <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">글쓴이</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">작성일</th>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+            
+        </form>
+        <br><br><hr>
+        <p style=" text-align: center; word-spacing: 20px;">
+            <button> <a href="/board"> 글 쓰기 홈</a> </button>
+            <button> <a href="/write"> 글 쓰기 </a> </button>
+        </p>
+    </body>
+</html>

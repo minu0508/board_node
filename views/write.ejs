@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <!-- 네비게이션 바 (메뉴) -->
+    <form action="/write">
+      <p class="c"><%-include ('nav/header.ejs') %></p>
+        <h1><%= title %></h1>
+      <hr>
+
+      <!-- 작성자 이름 입력 -->
+        <p>
+          <strong>▶ 작성자 이름 / 비밀번호</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <input type="text" placeholder="이름 / 최대 4자리" maxlength="4"> &nbsp;&nbsp; / &nbsp;&nbsp;
+        <input type="password" placeholder="PW / 최대 4자리." maxlength="4" minlength="4">
+        </br></br>
+        
+        <!-- 제목 입력 -->
+        <p>
+          <strong>▶ 제목</strong>
+        </p>
+        <input type="text" placeholder="제목을 입력 해주세요."> 
+        <br><br>
+
+        <!-- 내용 입력 -->
+        <p>
+          <strong>▶ 글 내용</strong>
+        </p>
+        <input type="text" style="width: 100%; height: 300px;" placeholder="글을 작성하여 주세요.">
+        <br>
+
+        <!-- 버튼 관련 -->
+        <p style="text-align: center; word-spacing: 5px;">
+          <button type="submit">글작성</button>
+          <button type="reset">초기화</button>
+        </p>
+      </form> <hr>
+      <p style="text-align: center; word-spacing: 20px;">
+        <button> <a href="board"> 글 쓰기 홈 </a> </button>
+        <button> <a href="/list"> 목록 </a> </button>
+      </p>
+  </body>
+</html>
