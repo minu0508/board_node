@@ -1,0 +1,5 @@
+exports.selectAllPosts = 'select uid, title, writer from blog'
+exports.selectPostDetail = 'select * from blog where uid = ?'
+exports.writePost = 'insert into blog(title, content, writer) values(?, ?, ?)'
+exports.modifyPost = 'update blog set title=?, content=?, writer=? where uid=?'
+exports.deletePost = 'delete from blog where uid=?'

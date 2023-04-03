@@ -9,21 +9,21 @@
 <body>
 
     <form
-        action='/'
+        action='/<%= postDetail[0].uid %>?_method=PATCH'
         method='post'
     >
 
         제목<br>
-        <input name='title' type='text'/><br>
+        <input name='title' type='text' value='<%= postDetail[0].title %>'/><br>
         <br>
         작성자<br>
-        <input name='writer' type='text'/><br>
+        <input name='writer' type='text' value='<%= postDetail[0].writer %>'/><br>
         <br>
         내용<br>
-        <input name='content' type='text'/><br>
+        <input name='content' type='text' value='<%= postDetail[0].content %>'/><br>
         <br>
-        <input type='submit' value='추가'>
-    </form>
+        <input type='submit' value='수정'>
+      </form>
 
 </body>
 </html>
